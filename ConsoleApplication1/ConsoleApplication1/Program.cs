@@ -15,7 +15,7 @@ namespace ConsoleApplication1
             String sUserName;
             Console.WriteLine("Escriba el nombre de usuario: ");
             sUserName = Console.ReadLine();
-            Console.WriteLine("Hello Word," + sUserName);
+            Console.WriteLine("Hello World,  " + sUserName);
             Console.ReadLine();
 
         }
