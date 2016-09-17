@@ -12,10 +12,10 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
 
-            string userName;
-            Console.WriteLine("Escriba el nopmbre de usuario");
-            userName = Console.ReadLine();
-            Console.WriteLine("Hello Word...");
+            String sUserName;
+            Console.WriteLine("Escriba el nombre de usuario: ");
+            sUserName = Console.ReadLine();
+            Console.WriteLine("Hello Word," + sUserName);
             Console.ReadLine();
 
         }
