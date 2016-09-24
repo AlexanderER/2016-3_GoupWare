@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman", "Hangman\Hangman.csproj", "{05E3D3F6-F55D-403B-891E-A26999675CAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.Business_Logic", "Hangman.Business_Logic\Hangman.Business_Logic.csproj", "{84E5B796-68AB-4CDB-A018-8B53845DA3ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangman.UnitTests", "Hangman.UnitTests\Hangman.UnitTests.csproj", "{851A3CCB-7451-4DCF-A278-62923271BD95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05E3D3F6-F55D-403B-891E-A26999675CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E3D3F6-F55D-403B-891E-A26999675CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E3D3F6-F55D-403B-891E-A26999675CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E3D3F6-F55D-403B-891E-A26999675CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84E5B796-68AB-4CDB-A018-8B53845DA3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84E5B796-68AB-4CDB-A018-8B53845DA3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84E5B796-68AB-4CDB-A018-8B53845DA3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84E5B796-68AB-4CDB-A018-8B53845DA3ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{851A3CCB-7451-4DCF-A278-62923271BD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{851A3CCB-7451-4DCF-A278-62923271BD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{851A3CCB-7451-4DCF-A278-62923271BD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{851A3CCB-7451-4DCF-A278-62923271BD95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
+	EndGlobalSection
+EndGlobal
