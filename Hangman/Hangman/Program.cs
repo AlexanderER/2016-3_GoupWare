@@ -71,18 +71,6 @@ namespace Hangman
                 Console.Write(Environment.NewLine + "FALLIDO");
                 Console.ReadLine();
             }
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
