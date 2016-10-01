@@ -40,8 +40,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\AgregarUnaLetraAdivinadaAlaPalabra.cs" />
+    <Compile Include="Acciones\ElUsuarioFalloLaletraIngresada.cs" />
+    <Compile Include="Acciones\IngresarLetra.cs" />
+    <Compile Include="Acciones\ObtenerLaPalabraParaAdivinar.cs" />
     <Compile Include="Herramientas.cs" />
+    <Compile Include="Modelo\LetrasIngresadas.cs" />
+    <Compile Include="Modelo\PalabraPorAveriguar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validacion\FaltanLetrasPorIngresar.cs" />
+    <Compile Include="Validacion\LaletraHaSidoIngresada.cs" />
+    <Compile Include="Validacion\LaletraPerteneceAlaPalabra.cs" />
+    <Compile Include="Validacion\QuedanIntentosDisponibles.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Servicios\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
