@@ -67,6 +67,7 @@
       <DependentUpon>AdventureWorksContext.edmx</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="MyTables\Product.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>AdventureWorksContext.tt</DependentUpon>
     </Compile>
@@ -107,6 +108,7 @@
       <LastGenOutput>AdventureWorksContext.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
