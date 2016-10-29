@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DDD5209F-06AD-4A8E-8DD5-2752AFFD901C}</ProjectGuid>
+    <ProjectGuid>{83088311-84A7-4BB9-A08E-4C30C5225350}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GroupWare.AdventureWorks.BL</RootNamespace>
-    <AssemblyName>GroupWare.AdventureWorks.BL</AssemblyName>
+    <RootNamespace>GroupWare.AdventureWorks.G_Repository</RootNamespace>
+    <AssemblyName>GroupWare.AdventureWorks.G_Repository</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -70,26 +70,26 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Codigo\Servicios\Products.svc" />
-    <Content Include="Codigo\Servicios\Service1.svc" />
+    <Content Include="Sevices\Service1.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Codigo\Acciones\Products.cs" />
-    <Compile Include="Codigo\Interfaces\IProducts.cs" />
-    <Compile Include="Codigo\Repositorios\Products.cs" />
-    <Compile Include="Codigo\Servicios\Products.svc.cs">
-      <DependentUpon>Products.svc</DependentUpon>
-    </Compile>
-    <Compile Include="Codigo\Servicios\Service1.svc.cs">
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IModifiableEntity.cs" />
+    <Compile Include="Interfaces\IReadOnlyRepository.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IService1.cs" />
+    <Compile Include="Sevices\Entity.cs" />
+    <Compile Include="Sevices\EntityFrameworkReadOnlyRepository.cs" />
+    <Compile Include="Sevices\EntityFrameworkRepository.cs" />
+    <Compile Include="Sevices\Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
-    <Compile Include="Codigo\Interfaces\IService1.cs" />
+    <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Codigo\Validaciones\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -99,16 +99,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GoupWare.AdventureWorks.Model\GoupWare.AdventureWorks.Model.csproj">
-      <Project>{6397978a-5f10-4a4b-b178-41ccbc148c9e}</Project>
-      <Name>GoupWare.AdventureWorks.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\GroupWare.AdventureWorks.G_Repository\GroupWare.AdventureWorks.G_Repository.csproj">
-      <Project>{83088311-84a7-4bb9-a08e-4c30c5225350}</Project>
-      <Name>GroupWare.AdventureWorks.G_Repository</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -123,9 +113,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50864</DevelopmentServerPort>
+          <DevelopmentServerPort>49661</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50864/</IISUrl>
+          <IISUrl>http://localhost:49661/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
